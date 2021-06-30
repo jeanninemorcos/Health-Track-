@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="saúde, alimentação, bem-estar"/>
+    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <title>Histórico De Exercícios - Health Track</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="histexercicio">    
+    
+<main class="container">
+
+    <header>
+        <button id="btn-hamburger" class="btn btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#hamburger">
+            <i class="bi bi-list"></i>                         
+        </button>     
+        <h1>Health Track</h1>        
+    </header>
+
+    <div class="subtitulo">
+        <p>
+            Meu histórico de exercícios
+        </p>
+    </div>
+
+    <aside id="hamburger" class="offcanvas offcanvas-start" tabindex="-1">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <div class="btn-group-vertical">
+                <a href="./home.html" target="_blank" class="btn">Home</a>
+                <a href="./alimentacao.html" target="_blank" class="btn" >Alimentação</a>
+                <a href="./exercicio.html" target="_blank" class="btn">Exercícios</a>
+                <a href="./medida.html" target="_blank" class="btn">Medidas</a>
+                <a href="./dashboard.html" target="_blank" class="btn">Dashboard</a>
+                <a href="" target="_blank" class="btn">Planos</a>
+                <a href="" target="_blank" class="btn">Contato</a>
+            </div>
+        </div>        
+    </aside>
+
+    <div class="tabelaTeste">
+    <table class="table">
+        <thead class="table-light">
+            <tr>
+                <th scope="col">DATA (dd/mm/aaaa)</th>
+                <th scope="col">EXERCÍCIO</th>
+                <th scope="col">TEMPO (min)</th>
+                <th scope="col">CALORIAS QUEIMADAS (Kcal)</th>
+                <th scope="col">AÇÕES</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>14/05/2020</td>
+                <td>Aeróbico</td>
+                <td>30</td>
+                <td>500</td>
+                <td><a href=""><i class="bi bi-pencil"></i></a><a href=""><i class="bi bi-trash"></i></a></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+
+
+</main>
+</body>
+</html>

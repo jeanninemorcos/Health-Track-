@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="saúde, alimentação, bem-estar"/>
+    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <title>Alimentação - Health Track</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="food">    
+    
+<main class="container">
+
+    <header>
+        <button id="btn-hamburger" class="btn btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#hamburger">
+            <i class="bi bi-list"></i>                         
+        </button>     
+        <h1>Health Track</h1>        
+    </header>
+
+    <div class="subtitulo">
+        <p>
+            Adicione aqui as suas refeições!
+        </p>
+    </div>
+
+    <aside id="hamburger" class="offcanvas offcanvas-start" tabindex="-1">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <div class="btn-group-vertical">
+                <a href="./home.html" target="_blank" class="btn">Home</a>
+                <a href="./alimentacao.html" target="_blank" class="btn" >Alimentação</a>
+                <a href="./exercicio.html" target="_blank" class="btn">Exercícios</a>
+                <a href="./medida.html" target="_blank" class="btn">Medidas</a>
+                <a href="./dashboard.html" target="_blank" class="btn">Dashboard</a>
+                <a href="" target="_blank" class="btn">Planos</a>
+                <a href="" target="_blank" class="btn">Contato</a>
+            </div>
+        </div>        
+    </aside>
+
+    <div>
+        <form id="cadastrar-exercicio" action="" method="POST">
+
+            <label for="refeicao" id="titulo-refeicao">REFEIÇÃO</label><br>
+            <select class="genero"><option value="cf">Café da Manhã</option><option value="al">Almoço</option><option value="jn">Janta</option><option value="ln">Lanche</option></select><br><br>
+
+            <label for="date">DATA</label><br>
+            <input type="date" id="date" name="date" style="width:90%" value="" class="input" required><br><br>
+
+            <label for="alimento">ALIMENTO </label>
+            <input type="text" class="input" required><br><br>
+            
+            <label for="peso">PESO (g)</label>
+            <input type="number" onkeypress="return event.charCode >= 48" min="1" class="input"><br><br>
+
+            <label for="calorias">CALORIAS (Kcal)</label>
+            <input type="number" onkeypress="return event.charCode >= 48" min="1"  class="input"><br><br>
+        </form>
+    </div>
+
+
+    <footer class="fbutton">
+
+        <a href="" id="addi-button">Adicionar Refeição</a>       
+
+        <a href="./historico_alimentacao.html" id="rbutton">Meu Histórico</a>
+    </footer>
+
+</main>
+
+</body>
+
+</html>
